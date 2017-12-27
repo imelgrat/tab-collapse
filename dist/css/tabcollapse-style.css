@@ -1,0 +1,117 @@
+.panel-title {
+	cursor:pointer;
+}
+h4.tab-title
+{
+	font-family: "avenirheavy", Helvetica, Arial, "sans-serif";
+	font-weight: normal;
+	font-size: 22px;
+	color: #ffffff;
+}
+.vertab-content ul, .vertab-content ol {
+	padding-left: 15px;
+}
+@media (min-width:768px) {
+.vertab-container {
+	z-index: 10;
+	background-color: #7952b3;
+	padding: 0 !important;
+	border: 1px solid #ddd;
+	margin-top: 20px;
+	background-clip: padding-box;
+	opacity: 0.97;
+	filter: alpha(opacity=97);
+	overflow: auto;
+	margin-bottom: 50px;
+}
+.vertab-menu {
+	padding-right: 0;
+	padding-left: 0;
+	padding-bottom: 0;
+	display: block;
+	background-color: #e3e3e3;
+}
+.vertab-menu .list-group {
+	margin-bottom: 0;
+}
+.vertab-menu .list-group>a {
+	margin-bottom: 0;
+	border-radius: 0;
+}
+.vertab-menu .list-group>a, .vertab-menu .list-group>a {
+	color: #818181;
+	background-image: none;
+	background-color: #F6F6F6;
+	border-radius: 0;
+	box-sizing: border-box;
+	border: none;
+	border-bottom: 1px solid #CACACA;
+	padding: 15px 10px;
+}
+.vertab-menu .list-group>a.active, .vertab-menu .list-group>a:hover, .vertab-menu .list-group>a:focus {
+	position: relative;
+	border: none;
+	border-radius: 0;
+	border-bottom: 1px solid #CACACA;
+	border-left: 5px solid #7952b3;
+	padding-left: 5px;
+	background-image: none;
+	background-color: #F6F6F6;
+	color: #7952b3;
+}
+.vertab-content {
+	padding-left: 20px;
+	padding-top: 10px;
+	color: #FFFFFF;
+}
+.vertab-accordion .vertab-content:not(.active) {
+	display: none;
+}
+.vertab-accordion .vertab-content.active .collapse {
+	display: block;
+}	
+.vertab-container .panel-heading {
+	display: none;
+}
+.vertab-container .panel-body {
+	border-top: none !important;
+}
+}
+
+/* If the tc_breakpoint variable is changed, this breakpoint should be changed as well */
+@media (max-width:767px) {
+.vertab-container {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.vertab-container .vertab-menu {
+	display: none;
+}
+.vertab-container .panel-heading {
+	background-color: #F6F6F6;
+	color: #818181;
+	padding: 15px;
+	border-bottom: 1px solid #F6F6F6;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	border-left: 5px solid #F6F6F6;
+}
+.vertab-container .panel-heading:hover, .vertab-container .panel-heading:focus, .vertab-container .panel-heading.active {
+	border-left: 5px solid #7952b3;
+	border-bottom: 1px solid #7952b3;
+}
+.vertab-content {
+	border-bottom: 1px solid #CACACA;
+}
+.vertab-container .panel-title a:focus, .vertab-container .panel-title a:hover, .vertab-container .panel-title a:active {
+	color: #818181;
+	text-decoration: none;
+}
+.panel-collapse.collapse, .panel-collapse.collapsing {
+	background-color: #7952b3 !important;
+	color: #ffffff;
+}
+.vertab-container .panel-collapse .panel-body {
+	border-top: none !important;
+}
+}
